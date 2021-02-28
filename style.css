@@ -1,7 +1,7 @@
 #snake-field{
     display: inline-block; 
 }
-.snake-renew, .snake-start, .snake-start-nonactive {
+#snake-renew, #snake-start, .snake-start-nonactive {
     width: 140px;
     padding: 15px;
     color: white;
@@ -10,8 +10,8 @@
     cursor: pointer;
     float: left; 
 }
-.snake-start, .snake-start-nonactive {
-    margin-right: 10px;
+#snake-start, #snake-start-nonactive {
+    margin-right: 18px;
 }
 .snake-start-nonactive{
     background-color: #005300;

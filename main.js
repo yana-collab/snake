@@ -151,7 +151,7 @@ function move() {
 function isSnakeUnit(unit) {
     var check = false;
 
-    // если еда
+    // если еда 
     if (snake.includes(unit)) {
         check = true;
     }
@@ -194,11 +194,12 @@ function createFood() {
         // проверка на змейку
         if (!food_cell_classes.includes('snake-unit')) {
             var classes = '';
-            for (var i = 0; i < food_cell_classes.length; i++) {
-                classes += food_cell_classes[i] + ' ';
-            }
+            //for (var i = 0; i < food_cell_classes.length; i++) {
+             //   classes += food_cell_classes[i] + ' ';
+            //}
 
-            food_cell.setAttribute('class', classes + 'food-unit');
+            //food_cell.setAttribute('class', classes + 'food-unit');
+            food_cell.classList.add ('food-unit');
             foodCreated = true;
         }
     }
@@ -253,4 +254,3 @@ function refreshGame() {
 
 // Инициализация
 window.onload = init;
-changeDirection();
